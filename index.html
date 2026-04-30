@@ -3,149 +3,176 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- BEGINNER EDIT: page title in the browser tab -->
-    <title>Helin Akyuz | Portfolio</title>
-    <meta
-      name="description"
-      content="Helin Akyuz — Computer Science student, human-centred technology, interactive digital experiences, London, UK."
-    />
+    <title>Helin Akyuz — CS Student & Experience Builder</title>
+    <meta name="description" content="Helin Akyuz — Computer Science student at University of Greenwich. Human-centred technology, interactive digital experiences, London, UK." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- BEGINNER EDIT: Sticky header — add/remove nav items if you add new sections (match #section-id) -->
+
     <header class="site-header">
       <nav class="container nav" aria-label="Main">
         <a class="logo" href="#hero" aria-label="Helin Akyuz, back to top">HA</a>
-
-        <button
-          id="menuToggle"
-          class="menu-toggle"
-          type="button"
-          aria-label="Toggle navigation"
-          aria-expanded="false"
-          aria-controls="navLinks"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
+        <button id="menuToggle" class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
         </button>
-
         <ul id="navLinks" class="nav-links">
           <li><a href="#about">About</a></li>
+          <li><a href="#projects">Work</a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#coursework">Coursework</a></li>
-          <li><a href="#leadership">Leadership</a></li>
-          <li><a href="#certifications">Certifications</a></li>
-          <li><a href="#interests">Interests</a></li>
-          <li><a href="#languages">Languages</a></li>
+          <li><a href="#journey">Journey</a></li>
+          <li><a href="#certifications">Certs</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <!--
-        1) HERO
-        Background image: set in style.css under “IMAGE LAYER” (e.g. assets/hero-bg.jpg)
-      -->
+
+      <!-- 1) HERO -->
       <section id="hero" class="hero section">
         <div id="heroParticles" class="hero-particles" aria-hidden="true"></div>
         <div class="container hero-grid">
           <div class="hero-content reveal">
-            <p class="eyebrow">Computer Science · University of Greenwich · London, UK</p>
-            <h1 class="hero-name">Helin Akyuz</h1>
-            <p class="hero-kicker">Building digital experiences where technology feels more human, creative, and alive.</p>
-            <p class="hero-intro">
-              I’m a Computer Science student with a focus on human-centred technology, interactive
-              design, and the link between solid technical systems and how people experience them.
-            </p>
-
-            <!-- BEGINNER EDIT: primary CTAs (keep href="#…" in sync with section id) -->
+            <p class="eyebrow">Computer Science · University of Greenwich · London</p>
+            <h1 class="hero-name">Helin<br>Akyuz</h1>
+            <p class="hero-kicker">Building digital experiences where technology feels more <em>human</em>.</p>
             <div class="hero-cta-group">
-              <a class="btn btn-primary" href="#projects">View Projects</a>
-              <a class="btn btn-ghost" href="#contact">Contact Me</a>
+              <a class="btn btn-primary" href="#projects">View My Work</a>
+              <a class="btn btn-ghost" href="#contact">Get in Touch</a>
             </div>
-
-            <!-- BEGINNER EDIT: personal links -->
             <div class="social-row">
-              <a
-                class="social-pill"
-                href="https://www.linkedin.com/in/helin303"
-                target="_blank"
-                rel="noopener noreferrer"
-                >LinkedIn</a
-              >
-              <a
-                class="social-pill"
-                href="https://github.com/helinakyz3"
-                target="_blank"
-                rel="noopener noreferrer"
-                >GitHub</a
-              >
+              <a class="social-pill" href="https://www.linkedin.com/in/helin303" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a class="social-pill" href="https://github.com/helinakyz3" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
           </div>
 
           <aside class="hero-highlights reveal" aria-label="Profile highlights">
             <article class="highlight-card">
-              <p class="highlight-title">Computer Science Student</p>
-              <p>Building depth in Python, functional programming, and systems thinking.</p>
+              <span class="hc-icon">⬡</span>
+              <p class="highlight-title">CS Student</p>
+              <p>Python · Algorithms · Systems Thinking</p>
             </article>
             <article class="highlight-card">
+              <span class="hc-icon">◈</span>
               <p class="highlight-title">Founding President</p>
-              <p>Travel &amp; Culture Society, Greenwich Students’ Union</p>
+              <p>Travel & Culture Society · Greenwich SU</p>
             </article>
             <article class="highlight-card">
-              <p class="highlight-title">Human-Centred Technology</p>
-              <p>How people feel, think, and connect with digital products</p>
+              <span class="hc-icon">◎</span>
+              <p class="highlight-title">Human-Centred Tech</p>
+              <p>How people feel, think & connect with digital products</p>
             </article>
             <article class="highlight-card">
+              <span class="hc-icon">◇</span>
               <p class="highlight-title">Interactive Experiences</p>
-              <p>Blending code with meaningful, engaging interaction</p>
+              <p>Code meets meaningful, engaging interaction</p>
             </article>
           </aside>
+        </div>
+        <div class="scroll-hint" aria-hidden="true">
+          <span class="scroll-line"></span>
+          <span class="scroll-label">scroll</span>
         </div>
       </section>
 
       <!-- 2) ABOUT -->
       <section id="about" class="section">
-        <div class="container narrow reveal">
-          <p class="section-label">About</p>
-          <h2 class="section-title">About me</h2>
-          <p>
-            I’m a Computer Science student at the University of Greenwich with a strong interest
-            in human-centred technology, interactive digital experiences, and the relationship
-            between technology and human behaviour. While building my technical foundation through
-            programming, algorithms, functional programming, and systems-based coursework, I’m also
-            drawn to more creative, meaningful ways technology can shape how people feel, interact,
-            and connect.
-          </p>
-          <p>
-            My profile combines analytical thinking with curiosity, leadership, and a
-            multidisciplinary perspective. I’m especially interested in projects that grow my
-            technical skills while staying connected to people, experience, and more engaging
-            digital interaction. I also value community building and cross-cultural communication.
-          </p>
+        <div class="container about-grid reveal">
+          <div class="about-label-col">
+            <p class="section-label">Identity</p>
+          </div>
+          <div class="about-body">
+            <h2 class="section-title">About me</h2>
+            <p class="about-lead">
+              I'm a Computer Science student at the University of Greenwich with a strong interest
+              in human-centred technology, interactive digital experiences, and the relationship
+              between technology and human behaviour.
+            </p>
+            <p>
+              While building my technical foundation through programming, algorithms, and systems-based
+              coursework, I'm drawn to creative, meaningful ways technology can shape how people feel,
+              interact, and connect. I combine analytical thinking with curiosity, leadership, and a
+              multidisciplinary perspective — including cross-cultural communication across three languages.
+            </p>
+            <div class="about-tags">
+              <span>Human-Centred Design</span>
+              <span>Interactive Experiences</span>
+              <span>Community Building</span>
+              <span>Cross-Cultural Communication</span>
+            </div>
+          </div>
         </div>
       </section>
 
-      <!-- 3) SKILLS -->
-      <section id="skills" class="section section-tint">
+      <!-- 3) PROJECTS -->
+      <section id="projects" class="section section-dark">
+        <div class="container reveal">
+          <div class="section-head">
+            <p class="section-label">Work</p>
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-lead">Academic projects built through coursework and independent exploration.</p>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card">
+              <div class="project-card-top">
+                <span class="project-num">01</span>
+                <span class="project-tag">Python · OOP</span>
+              </div>
+              <h3>Outlook-Style Email System</h3>
+              <p>Feature-complete email management system supporting mailbox display, folder operations, status tracking, date-based search, and email creation using object-oriented design principles.</p>
+              <p class="project-detail">Extended a Personal mail type via inheritance and text-processing logic to generate automated message statistics.</p>
+              <p class="project-pending" role="status">Repository link coming soon.</p>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card-top">
+                <span class="project-num">02</span>
+                <span class="project-tag">Scheme · Functional</span>
+              </div>
+              <h3>Mailbox Processing System</h3>
+              <p>Pure functions for retrieval, deletion, filtering, and sorting of email data within a functional mailbox-processing simulation.</p>
+              <p class="project-detail">Applied recursion and nested list processing to handle confidential email logic and structured test suites.</p>
+              <p class="project-pending" role="status">Repository link coming soon.</p>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card-top">
+                <span class="project-num">03</span>
+                <span class="project-tag">Flex · Bison · Compilers</span>
+              </div>
+              <h3>Boolean Algebra Calculator</h3>
+              <p>Postfix Boolean algebra calculator applying lexical analysis, parsing, and rule-based expression evaluation through hands-on compiler coursework.</p>
+              <p class="project-detail">Implemented using Flex for lexical analysis and Bison for parsing, producing a working expression evaluator.</p>
+              <p class="project-pending" role="status">Repository link coming soon.</p>
+            </article>
+
+            <article class="project-card project-card--featured">
+              <div class="project-card-top">
+                <span class="project-num">04</span>
+                <span class="project-tag">HTML · CSS · JS</span>
+              </div>
+              <h3>This Portfolio Website</h3>
+              <p>Designed and built from scratch — no frameworks. Smooth animations, parallax effects, particle systems, and a fully responsive layout deployed via Vercel.</p>
+              <p class="project-detail">Built with IntersectionObserver, requestAnimationFrame, and CSS custom properties. Integrated GitHub → Vercel CI/CD pipeline.</p>
+              <a class="btn btn-outline-sm" href="https://helin-portfolio-website.vercel.app/" target="_blank" rel="noopener noreferrer">View Live ↗</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4) SKILLS -->
+      <section id="skills" class="section">
         <div class="container reveal">
           <div class="section-head">
             <p class="section-label">Capabilities</p>
             <h2 class="section-title">Skills</h2>
-            <p class="section-lead">Grounded in coursework and project work; always learning.</p>
+            <p class="section-lead">Grounded in coursework and project work — always learning.</p>
           </div>
 
-          <!-- BEGINNER EDIT: add/remove <li> items; duplicate a .skill-panel to add a column -->
           <div class="skills-bento">
             <article class="skill-panel">
               <h3>Programming</h3>
@@ -153,274 +180,190 @@
                 <li>Python</li>
                 <li>Scheme</li>
                 <li>SQL</li>
+                <li>HTML &amp; CSS</li>
+                <li>JavaScript <span class="tag-soft">(learning)</span></li>
               </ul>
             </article>
             <article class="skill-panel">
-              <h3>Tools &amp; environments</h3>
+              <h3>Tools &amp; Environments</h3>
               <ul>
                 <li>Linux</li>
-                <li>Flex</li>
-                <li>Bison</li>
+                <li>Flex &amp; Bison</li>
                 <li>Git <span class="tag-soft">(learning)</span></li>
-                <li>GitHub <span class="tag-soft">(learning)</span></li>
+                <li>GitHub</li>
+                <li>Vercel</li>
+                <li>Cursor</li>
               </ul>
             </article>
             <article class="skill-panel">
-              <h3>Core areas</h3>
+              <h3>Core Areas</h3>
               <ul>
-                <li>Algorithms &amp; data structures</li>
-                <li>Object-oriented programming</li>
-                <li>Functional programming</li>
-                <li>Compiler fundamentals</li>
+                <li>Algorithms &amp; Data Structures</li>
+                <li>Object-Oriented Programming</li>
+                <li>Functional Programming</li>
+                <li>Compiler Fundamentals</li>
+                <li>Computer Systems</li>
               </ul>
             </article>
             <article class="skill-panel skill-panel--wide">
-              <h3>Additional</h3>
-              <ul>
-                <li>Problem solving</li>
+              <h3>Beyond Code</h3>
+              <ul class="skills-inline">
+                <li>Problem Solving</li>
                 <li>Leadership</li>
-                <li>Testing &amp; debugging</li>
-                <li>Networking fundamentals</li>
-                <li>Computer systems</li>
+                <li>Testing &amp; Debugging</li>
+                <li>Networking Fundamentals</li>
+                <li>Community Building</li>
+                <li>Cross-Cultural Communication</li>
               </ul>
             </article>
           </div>
         </div>
       </section>
 
-      <!-- 4) FEATURED PROJECTS -->
-      <section id="projects" class="section">
+      <!-- 5) JOURNEY -->
+      <section id="journey" class="section section-dark">
         <div class="container reveal">
           <div class="section-head">
-            <p class="section-label">Work</p>
-            <h2 class="section-title">Featured projects</h2>
-            <p class="section-lead">
-              Coursework and personal builds that show both technical range and a thoughtful approach
-              to how software behaves.
-            </p>
+            <p class="section-label">Background</p>
+            <h2 class="section-title">Academic &amp; Leadership Journey</h2>
           </div>
 
-          <!--
-            BEGINNER EDIT — PROJECTS
-            When a repo is public: add <a class="project-repo" href="https://github.com/..."> on each card
-            and remove the .project-pending line. For now, pending text avoids fake/placeholder links.
-          -->
-          <div class="project-grid">
-            <article class="project-card">
-              <div class="project-card-top">
-                <span class="project-num">01</span>
-                <h3>Outlook-Style Email Handling System</h3>
+          <div class="journey-grid">
+            <div class="journey-col">
+              <h3 class="journey-col-title">Education</h3>
+              <div class="edu-timeline" role="list">
+                <article class="edu-item" role="listitem">
+                  <span class="edu-years">2025 – 2028</span>
+                  <p class="edu-place">University of Greenwich · London, UK</p>
+                  <h4>BSc Computer Science (Year 1)</h4>
+                  <p class="edu-note">Algorithms &amp; Data Structures · Paradigms of Programming · Software Engineering · Compilers · Computer Systems · Advanced Mathematics</p>
+                </article>
+                <article class="edu-item" role="listitem">
+                  <span class="edu-years">2024</span>
+                  <p class="edu-place">PJAIT · Warsaw, Poland</p>
+                  <h4>International Exchange</h4>
+                  <p class="edu-note">Computer Science studies at a leading European technology university alongside students from 30+ countries.</p>
+                </article>
               </div>
-              <p class="project-stack">Python · OOP</p>
-              <p>
-                A feature-complete email management system: mailbox view, folder operations, status
-                handling, date-based search, and composition - structured with OOP. Extended a
-                <em>Personal</em> mail type with inheritance and text processing to report message
-                statistics, developed as part of a paired project.
-              </p>
-              <p class="project-pending" role="status">Repository link to be added when available.</p>
-            </article>
-
-            <article class="project-card">
-              <div class="project-card-top">
-                <span class="project-num">02</span>
-                <h3>Mailbox Processing System</h3>
-              </div>
-              <p class="project-stack">Scheme · Functional programming</p>
-              <p>
-                Pure functions for retrieval, deletion, filtering, and sorting in a mailbox
-                simulation; recursion and nested lists for confidential logic, transformation, and
-                structured test suites.
-              </p>
-              <p class="project-pending" role="status">Repository link to be added when available.</p>
-            </article>
-
-            <article class="project-card">
-              <div class="project-card-top">
-                <span class="project-num">03</span>
-                <h3>Boolean Algebra Calculator</h3>
-              </div>
-              <p class="project-stack">Flex &amp; Bison · Compiler design</p>
-              <p>
-                Postfix boolean algebra: lexical analysis, parsing, and rule-based evaluation
-                through hands-on compiler coursework.
-              </p>
-              <p class="project-pending" role="status">Repository link to be added when available.</p>
-            </article>
-
-            <article class="project-card project-card--accent">
-              <div class="project-card-top">
-                <span class="project-num">04</span>
-                <h3>Personal portfolio website</h3>
-              </div>
-              <p class="project-stack">HTML · CSS · JavaScript</p>
-              <p>
-                This site presents my background, skills, work, and direction in a clear, animated and visually considered layout.
-                No frameworks, easy to grow.
-              </p>
-              <p class="project-pending" role="status">Repository link to be added when available.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- 5) EDUCATION (years as on CV) -->
-      <section id="education" class="section section-tint">
-        <div class="container reveal">
-          <div class="section-head">
-            <p class="section-label">Academic</p>
-            <h2 class="section-title">Education</h2>
-            <p class="section-lead">Chronology and context </p>
-          </div>
-
-          <div class="edu-timeline" role="list">
-            <article class="edu-item" role="listitem">
-              <div class="edu-meta">
-                <span class="edu-years">2025–2028</span>
-                <p class="edu-place">University of Greenwich · London, United Kingdom</p>
-              </div>
-              <div class="edu-body">
-                <h3>BSc Computer Science (Year 1)</h3>
-              </div>
-            </article>
-            <article class="edu-item" role="listitem">
-              <div class="edu-meta">
-                <span class="edu-years">2024</span>
-                <p class="edu-place">Polsko-Japońska Akademia Technik Komputerowych (PJAIT) · Warsaw, Poland</p>
-              </div>
-              <div class="edu-body">
-                <h3>Computer science studies </h3>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- 6) COURSEWORK -->
-      <section id="coursework" class="section">
-        <div class="container reveal">
-          <div class="section-head">
-            <p class="section-label">Curriculum</p>
-            <h2 class="section-title">Relevant coursework</h2>
-          </div>
-          <ul class="coursework-list">
-            <li>Algorithms &amp; Data Structures</li>
-            <li>Paradigms of Programming</li>
-            <li>Software Engineering</li>
-            <li>Introduction to Compilers</li>
-            <li>Computer &amp; Communication Systems</li>
-            <li>Advanced Mathematics for Computer Science</li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- 7) LEADERSHIP -->
-      <section id="leadership" class="section section-tint">
-        <div class="container narrow reveal">
-          <p class="section-label">Community</p>
-          <h2 class="section-title">Leadership experience</h2>
-          <div class="leadership-card">
-            <div class="leadership-head">
-              <h3>Founding President — Travel &amp; Culture Society, Greenwich Students’ Union</h3>
-              <p class="leadership-meta">University of Greenwich · February 2026 – present</p>
             </div>
-            <ul>
-              <li>Founded and launched a student society focused on travel, cultural exchange, and community connection</li>
-              <li>Grew membership to 8 members</li>
-              <li>Delivered 2 events within the first semester</li>
-              <li>Led early-stage society development: recruitment, event planning, and engagement</li>
-            </ul>
+
+            <div class="journey-col">
+              <h3 class="journey-col-title">Leadership</h3>
+              <div class="leadership-card">
+                <div class="leadership-head">
+                  <h4>Founding President</h4>
+                  <p class="leadership-role">Travel &amp; Culture Society · Greenwich Students' Union</p>
+                  <p class="leadership-meta">February 2026 – present</p>
+                </div>
+                <ul>
+                  <li>Founded and launched a student society focused on travel, cultural exchange, and community connection</li>
+                  <li>Grew membership to 8 members and delivered 2 events within the first semester</li>
+                  <li>Led recruitment, event planning, and engagement strategy</li>
+                </ul>
+              </div>
+
+              <h3 class="journey-col-title" style="margin-top: 2.5rem;">Languages</h3>
+              <ul class="lang-list">
+                <li><span>Turkish</span><span class="lang-level">Native</span></li>
+                <li><span>English</span><span class="lang-level">Full Professional</span></li>
+                <li><span>Kurdish</span><span class="lang-level">Full Professional</span></li>
+                <li><span>Spanish</span><span class="lang-level">Elementary</span></li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- 8) CERTIFICATIONS -->
+      <!-- 6) CERTIFICATIONS -->
       <section id="certifications" class="section">
         <div class="container reveal">
           <div class="section-head">
             <p class="section-label">Learning</p>
-            <h2 class="section-title">Certifications &amp; professional development</h2>
-            <p class="section-lead">Short, targeted courses; part of my wider learning habit.</p>
+            <h2 class="section-title">Certifications &amp; Development</h2>
+            <p class="section-lead">Targeted courses that complement my CS degree. Verification links added where available.</p>
           </div>
-          <ul class="cert-list">
-            <li>Taking on New Initiatives in Your Company</li>
-            <li>Introduction to Modern AI</li>
-            <li>Introduction to IoT &amp; Digital Transformation</li>
-            <li>Digital Safety &amp; Security Awareness</li>
-            <li>Networking Basics</li>
-          </ul>
-        </div>
-      </section>
 
-      <!-- 9) INTERESTS -->
-      <section id="interests" class="section section-tint">
-        <div class="container narrow reveal">
-          <p class="section-label">Direction</p>
-          <h2 class="section-title">Interests &amp; career direction</h2>
-          <p>
-            I care about products that are technically sound <em>and</em> meaningful for the people
-            who use them. I’m most drawn to human-centred technology, interactive and creative
-            digital work, and how behaviour meets systems design.
-          </p>
-          <p>
-            I want to keep strengthening core CS skills (algorithms, languages, software practice)
-            while moving toward work where experience, culture, and interaction matter as much as the
-            project-stack, internships and early-career roles that balance craft with people.
-          </p>
-        </div>
-      </section>
+          <div class="cert-grid">
+            <article class="cert-card">
+              <div class="cert-card-top">
+                <span class="cert-provider">LinkedIn Learning</span>
+              </div>
+              <h3>Taking on New Initiatives in Your Company</h3>
+              <p>Strategic approaches to proposing and leading new projects within an organisation.</p>
+              <span class="cert-link-pending">Verification link pending</span>
+            </article>
 
-      <!-- 10) LANGUAGES -->
-      <section id="languages" class="section">
-        <div class="container reveal">
-          <div class="section-head">
-            <p class="section-label">Communication</p>
-            <h2 class="section-title">Languages</h2>
+            <article class="cert-card">
+              <div class="cert-card-top">
+                <span class="cert-provider">LinkedIn Learning</span>
+              </div>
+              <h3>Introduction to Modern AI</h3>
+              <p>Foundations of artificial intelligence, machine learning, and real-world AI applications.</p>
+              <span class="cert-link-pending">Verification link pending</span>
+            </article>
+
+            <article class="cert-card">
+              <div class="cert-card-top">
+                <span class="cert-provider">LinkedIn Learning</span>
+              </div>
+              <h3>Introduction to IoT &amp; Digital Transformation</h3>
+              <p>Internet of Things fundamentals and how digital transformation reshapes industries.</p>
+              <span class="cert-link-pending">Verification link pending</span>
+            </article>
+
+            <article class="cert-card">
+              <div class="cert-card-top">
+                <span class="cert-provider">LinkedIn Learning</span>
+              </div>
+              <h3>Digital Safety &amp; Security Awareness</h3>
+              <p>Core principles of cybersecurity, safe online practices, and data protection.</p>
+              <span class="cert-link-pending">Verification link pending</span>
+            </article>
+
+            <article class="cert-card">
+              <div class="cert-card-top">
+                <span class="cert-provider">Cisco</span>
+              </div>
+              <h3>Networking Basics</h3>
+              <p>Fundamentals of computer networking, IP addressing, and network infrastructure.</p>
+              <span class="cert-link-pending">Verification link pending</span>
+            </article>
+
+            <article class="cert-card cert-card--highlight">
+              <div class="cert-card-top">
+                <span class="cert-provider">Udacity · AWS</span>
+                <span class="cert-badge">In Progress</span>
+              </div>
+              <h3>AWS AI &amp; ML Scholars</h3>
+              <p>Comprehensive AI and machine learning curriculum in partnership with Amazon Web Services.</p>
+              <a class="cert-link-btn" href="https://www.udacity.com/scholarships/aws-ai-ml-scholars" target="_blank" rel="noopener noreferrer">View Programme ↗</a>
+            </article>
           </div>
-          <ul class="lang-list">
-            <li><span>Turkish</span> <span class="lang-level">Native</span></li>
-            <li><span>English</span> <span class="lang-level">Full professional</span></li>
-            <li><span>Kurdish</span> <span class="lang-level">Full professional</span></li>
-            <li><span>Spanish</span> <span class="lang-level">Elementary</span></li>
-          </ul>
+
+          <p class="cert-note">Verification links will be added as certificates are issued. If you need to verify any credential, please <a href="mailto:helen.akyuz04@gmail.com">reach out directly</a>.</p>
         </div>
       </section>
 
-      <!-- 11) CONTACT -->
+      <!-- 7) CONTACT -->
       <section id="contact" class="section section-cta">
         <div class="container narrow reveal">
           <p class="section-label">Connect</p>
-          <h2 class="section-title">Contact</h2>
+          <h2 class="section-title">Let's talk.</h2>
           <p class="contact-lead">
-            Open to internships, early-career opportunities, and thoughtful collaboration. Based in
-            <strong>London, United Kingdom</strong>.
+            Open to internships, early-career opportunities, and thoughtful collaboration.<br>
+            Based in <strong>London, United Kingdom</strong>.
           </p>
-
-          <!-- BEGINNER EDIT: email + profile URLs -->
           <a class="contact-email" href="mailto:helen.akyuz04@gmail.com">helen.akyuz04@gmail.com</a>
-
           <div class="contact-actions">
-            <a
-              class="btn btn-primary"
-              href="https://www.linkedin.com/in/helin303"
-              target="_blank"
-              rel="noopener noreferrer"
-              >LinkedIn</a
-            >
-            <a
-              class="btn btn-secondary"
-              href="https://github.com/helinakyz3"
-              target="_blank"
-              rel="noopener noreferrer"
-              >GitHub</a
-            >
+            <a class="btn btn-primary" href="https://www.linkedin.com/in/helin303" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="btn btn-secondary" href="https://github.com/helinakyz3" target="_blank" rel="noopener noreferrer">GitHub</a>
             <a class="btn btn-secondary" href="mailto:helen.akyuz04@gmail.com">Email me</a>
           </div>
         </div>
       </section>
+
     </main>
 
-    <!-- 12) FOOTER -->
     <footer class="site-footer">
       <div class="container footer-inner">
         <p class="footer-copy">
@@ -429,18 +372,12 @@
           <span>London, United Kingdom</span>
         </p>
         <div class="footer-links">
-          <a href="https://www.linkedin.com/in/helin303" target="_blank" rel="noopener noreferrer"
-            >LinkedIn</a
-          >
-          <a href="https://github.com/helinakyz3" target="_blank" rel="noopener noreferrer"
-            >GitHub</a
-          >
+          <a href="https://www.linkedin.com/in/helin303" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/helinakyz3" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
       </div>
     </footer>
 
     <script src="script.js"></script>
-
   </body>
 </html>
-
